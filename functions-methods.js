@@ -10,24 +10,21 @@ console.log("opdr 1")
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
-// function getEmailDomain(email) {
-//     // stap 1 zoekt naar @
-//     const atIndex = email.indexOf("@");
-//     //deze geeft nummer 7
-//
-//     // als @ word gevonden
-//     if (atIndex !== -1) {
-//         // substring-functie om het deel na "@" op te halen
-//         const domain = email.substring(atIndex + 1);
-//         return domain;
-//     } else {
-//         return "";
-//     }
-// }
-//
-// console.log(getEmailDomain("n.eeken@novi-education.nl"))
-// console.log(getEmailDomain("t.mellink@novi.nl"))
-// console.log(getEmailDomain("a.wiersma@outlook.com"))
+function getEmailDomain(email) {
+    // stap 1 zoekt naar @
+    const atIndex = email.indexOf("@");
+    //deze geeft nummer 7
+
+    // substring-functie om het deel na "@" op te halen
+    const domain = email.substring(atIndex + 1);
+
+    return domain;
+}
+
+
+console.log(getEmailDomain("n.eeken@novi-education.nl"))
+console.log(getEmailDomain("t.mellink@novi.nl"))
+console.log(getEmailDomain("a.wiersma@outlook.com"))
 
 
 /* Opdracht  2 */
